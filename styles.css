@@ -1,0 +1,163 @@
+body {background-color: gray; margin: auto; padding: 140px;padding-top: 50px;}
+   p,h4 { font-family: Arial;}
+
+.card {
+    width: 375px;
+    height: 375px;
+    background-color: #ffffff;
+    background: #fff;
+    border-width: 0.1px;
+    border-style: ridge;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    padding-top: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.content {
+    width: auto;
+    padding: 10px;
+    background: #e6e7e9;
+    text-align: center;
+}
+
+.picture {
+    position: relative;
+    height: 160px;
+    width: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.title {
+    padding-top: 65px;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.price {
+    padding-top: 5px;
+    padding-left: 20px;
+    text-align: left;
+    color: #415dda;
+    margin: 0;
+    font-weight: 600;
+}
+
+.button {    
+    opacity: 0;
+    position: absolute;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    /* Styles */
+    
+.card:hover {
+    background: #415dda;    
+    box-shadow: 1px 1px 15px #415dda;
+}
+
+.card:hover .picture{
+    opacity: 0.15;
+}
+
+.card:hover .title{
+    color: #fff;
+}
+.card:hover .price{
+  color: #fff;
+}
+
+.card:hover .button {
+    position: absolute;
+    opacity: 1;
+    left: 8%;
+    top: 40%;
+    display: inline-block;
+    padding: 18px 56px;
+    border: none;
+    border-radius: 74px;
+    background: #ffffff;
+    text-shadow: #ffffff 1px 1px 1px;
+    font: normal normal normal 20px arial;
+    color: #111111;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card:hover .button:active {
+    background: #999999;
+    background: -webkit-gradient(linear, left top, left bottom, from(#415dda), to(#ffffff));
+    background: -moz-linear-gradient(top, #415dda, #ffffff);
+    background: linear-gradient(to bottom, #415dda, #ffffff);
+    opacity: 0.8;
+}
+
+.button:focus {
+    outline: none !important;
+}
+}
+
+.button:before {
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: -11px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuUlEQVRIia2Uv0oDQRDGfzlCkHBFqpSC4EOIna2FBAvxAUQEU/kAtmJp4QNY+wBWVqlF22AhIocE60RD9M7iZnNzc7vnBVwYbm72m/l2vv3TAiKaj658Z00T2iYR4AtIxU/VArrAi/gbikRjvH4MfABTsXNFpruLFSYOYLy+JsjE7ylQLNZXBH0VDxGUgg48EpIzFXfknzKXiT+VOUeyBtwDJ+TSR45Qs+5KgUQSnCxZwLRcQ4mNgY6uqwnawIMAj02ndXvQk24yYN/WjYwdCPBZrcTJpQl0zoXkjIw8FYmQomNJOGzQwbrEfoBt01nZUeNICB4p7ooekfreCPaWwImyErkT8SaJA4pTZm0LWABzYDNQq9KB+78UggWFNNbmgrnyqFErURd4pXzmQ3ZHcTErQ+uriYbkm/cE7ADfgfyU/O0KLdQ70Sa/aPpMW9xKfh3BKmaP77KYJUqBU+CaGm09wz3fpQW3JJCqmPvviK0yZqrWsq5vcwbARGxQU7ARTt/KiOoeTPBfoAh4V7iE6jsU6dWnlKXCzFmMxUYhjE+iPVldwt8SJYL14vQmh56MUFeNcaHC/+L/AiTUmP6HDAW+AAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (max-device-width : 1024px) {
+    /* Styles */
+    .button {
+        position: absolute;
+        opacity: 1;
+        left: 60%;
+        top: 70%;
+        display: inline-block;
+        padding: 12px 32px;
+        border: #415dda 1px solid;
+        border-radius: 74px;
+        background: #fff;
+        text-shadow: #ffffff 1px 1px 1px;
+        font: normal normal normal 15px arial;
+        color: #111;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .card:hover {
+        
+    }
+    
+    .card:hover .button{
+        
+    }
+    
+    .button:before {
+    content:  "\0000a0";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 2px;
+    left: -10px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuUlEQVRIia2Uv0oDQRDGfzlCkHBFqpSC4EOIna2FBAvxAUQEU/kAtmJp4QNY+wBWVqlF22AhIocE60RD9M7iZnNzc7vnBVwYbm72m/l2vv3TAiKaj658Z00T2iYR4AtIxU/VArrAi/gbikRjvH4MfABTsXNFpruLFSYOYLy+JsjE7ylQLNZXBH0VDxGUgg48EpIzFXfknzKXiT+VOUeyBtwDJ+TSR45Qs+5KgUQSnCxZwLRcQ4mNgY6uqwnawIMAj02ndXvQk24yYN/WjYwdCPBZrcTJpQl0zoXkjIw8FYmQomNJOGzQwbrEfoBt01nZUeNICB4p7ooekfreCPaWwImyErkT8SaJA4pTZm0LWABzYDNQq9KB+78UggWFNNbmgrnyqFErURd4pXzmQ3ZHcTErQ+uriYbkm/cE7ADfgfyU/O0KLdQ70Sa/aPpMW9xKfh3BKmaP77KYJUqBU+CaGm09wz3fpQW3JJCqmPvviK0yZqrWsq5vcwbARGxQU7ARTt/KiOoeTPBfoAh4V7iE6jsU6dWnlKXCzFmMxUYhjE+iPVldwt8SJYL14vQmh56MUFeNcaHC/+L/AiTUmP6HDAW+AAAAAElFTkSuQmCC") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+}

@@ -1,0 +1,62 @@
+body {background-color: gray; margin: auto; padding: 140px;padding-top: 50px;}
+   p,h4 { font-family: Arial;}
+
+.card {
+    width: 375px;
+    height: 375px;
+    background-color: #ffffff;
+    background: #fff;
+    border-width: 0.1px;
+    border-style: ridge;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    padding-top: 0px;
+    display: inline-block;
+}
+
+.content {
+    width: auto;
+    padding: 10px;
+    background: #e6e7e9;
+}
+
+.picture {
+    height: 180px;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.card:hover {
+    background: #415dda;
+    box-shadow: 5px 5px 8px #415dda;
+}
+
+.card:hover .picture{
+    opacity: 0.15;
+}
+
+.card:hover .title{
+    opacity:0;
+}
+.card:hover .price{
+  opacity:0;
+}
+
+.title {
+    padding-top: 55px;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.price {
+    padding-top: 5px;
+    padding-left: 20px;
+    text-align: left;
+    color: blue;
+    margin: 0;
+    font-weight: 600;
+}
