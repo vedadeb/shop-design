@@ -144,24 +144,23 @@ body {
         cursor: pointer;
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
         
-        transition: .35s cubic-bezier(0.25, 0, 0, 1);
+        transition: .35s cubic-bezier(0.35, 0, 0, 1);
         transform: translate(0, 10%,0,0);
     }
 
     .card:hover .button:hover {
-        background: #999999;
-        background: -webkit-gradient(linear, left top, left center, from(#EEEEEE), to(#ffffff));
         background: -moz-linear-gradient(top, #EEEEEE, #ffffff);
         background: linear-gradient(to center, #EEEEEE, #ffffff);
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     .card:hover .button:active {
-        background: #DFDFDF;
-        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#DFDFDF));
-        background: -moz-linear-gradient(top, #DFDFDF, #fff);
-        background: linear-gradient(to bottom, #DFDFDF, #ff);
-        opacity: 0.8;
+        background: var(--primary-card-color);
+/*        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#DFDFDF));*/
+/*        background: -moz-linear-gradient(top, #fff, #DFDFDF);*/
+/*        background: linear-gradient(to bottom, var(--primary-card-color), var(--primary-card-color));*/
+        opacity: 0.6;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     }
 
     .card:hover .button:focus {
