@@ -81,7 +81,7 @@ body {
     padding: 10px 30px;
     border: none;
     border-radius: 74px;
-    background: linear-gradient(to right bottom, #fff 80%, var(--button-color) 100%);
+    background: linear-gradient(to right bottom, #fff 60%, var(--button-color) 100%);
     font: 14px ghotic;
     font-weight: 600;
     color: #111111;
