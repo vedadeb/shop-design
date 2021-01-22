@@ -109,13 +109,13 @@ body {
         background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
         background-repeat: no-repeat;
         background-size: 200% 100%;
-        transition: background .25s, background-color .25s;
+        transition: background .85s, background-color .85s;
         /*        background: #4d6dff;*/
         border-color: transparent;
     }
 
     .card:hover .picture {
-        opacity: 0.4;
+        opacity: 0.5;
     }
 
     .card:hover .title {
@@ -178,8 +178,8 @@ body {
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
         font: normal normal normal 22px arial;
         text-decoration: none;
-        left: 39%;
-        top: 41%;
+        left: 75%;
+        top: 80%;
         position: absolute;
         opacity: 0.9;
     }
