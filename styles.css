@@ -1,3 +1,7 @@
+:root {
+    --primary-card-color: #4d6dff;
+}
+
 @font-face {
     font-family: ghotic;
     src: url(./font/GothicA1-Regular.ttf);
@@ -97,15 +101,15 @@ body {
 
     .card:hover {
         /*background: #415dda;*/
-        box-shadow: 1px 1px 15px #415dda;
+        box-shadow: 1px 1px 15px var(--primary-card-color);
 
-        background-color: #4d6dff;
+        background-color: var(--primary-card-color);
         background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, .7) 100%);
         background-repeat: no-repeat;
         background-size: 200% 100%;
         transition: background-size 0.5s, background-color 0.3s, border-color 1s;
 /*        background: #4d6dff;*/
-        border-color: #4d6dff;
+        border-color: var(--primary-card-color);
     }
 
     .card:hover .picture {
@@ -135,6 +139,7 @@ body {
         color: #111111;
         text-decoration: none;
         cursor: pointer;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
     }
 
     .card:hover .button:hover {
@@ -170,7 +175,7 @@ body {
         background: -moz-linear-gradient(top, #6693ff, #364eb7);
         background: linear-gradient(to bottom, #6693ff, #6693ff);
 
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
         font: normal normal normal 22px arial;
         text-decoration: none;
         left: 60%;
