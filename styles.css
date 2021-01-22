@@ -96,8 +96,16 @@ body {
     }
 
     .card:hover {
-        background: #415dda;
+        /*background: #415dda;*/
         box-shadow: 1px 1px 15px #415dda;
+
+        background-color: #4d6dff;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, .7) 100%);
+        background-repeat: no-repeat;
+        background-size: 200% 100%;
+        transition: background-size 0.5s, background-color 0.3s, border-color 1s;
+        background: #4d6dff;
+        border-color: #4d6dff;
     }
 
     .card:hover .picture {
@@ -202,7 +210,6 @@ body {
         background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABMElEQVRIic2WS07DMBCGvwxRhaouWJU1F+EMvQYH4nJ0xaKLwrapEEgOi4yTUfyKSReMNPJvZzyPP+M4DSBM0gIb6uSae9jq6IAD8Ao8VDp/MkEcU8IjFg10AvpK7YCdCSgxLGrURTasljaxLma8r/D3xUBN4CxWwYGBtq5CT7pvTLJRsAXO+uARuOh8T6FLZrIFPtSHAC5H0V5Ltl1Scv6u+0aKUwGcGa8MFYlZT2E7CuBsW5UkeHlLpNRFqfl8LWUvqQrm2drSUzhq/1eKUjiwX0NRTiQAseiR+f+myB6mm1HkA/jvusexkpcctMDeXjiXQlarKcrRcJMuWtQVGZyyT2Z3pv4K7Zk++wDcMdwJvQZqjB6BZ7X5WaifwAvw5v34C8eWaOcb6n5jvlVHP78jqpLLTNsiUgAAAABJRU5ErkJggg==") no-repeat left center transparent;
         background-size: 100% 100%;
     }
-
 }
 
 .button:before {
