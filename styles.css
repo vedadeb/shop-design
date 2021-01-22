@@ -1,6 +1,7 @@
 :root {
     --primary-card-color: #4d6dff;
     --share-button-color: #405cd7;
+    --button-color: #b0ceff;
 }
 
 @font-face {
@@ -29,7 +30,7 @@ body {
     padding: 10px;
     padding-top: 0px;
     display: inline-block;
-    position: relative;
+    position: relative;    
     transition-delay: 0.3s;
     transition: background-color 0.3s;
 }
@@ -73,14 +74,14 @@ body {
     opacity: 0;
     transition-delay: 0.4s;
     transition: opacity 0.4s;
-
+/*    background: var(--button-color);*/
     left: 7%;
     top: 58%;
     display: inline-block;
     padding: 10px 30px;
     border: none;
     border-radius: 74px;
-/*    background: linear-gradient(to bottom, var(--white-color) 20%, rgba(255, 255, 255, 1) 100%);*/
+    background: linear-gradient(to right bottom, #fff 80%, var(--button-color) 100%);
     font: 14px ghotic;
     font-weight: 600;
     color: #111111;
@@ -159,13 +160,14 @@ body {
     }
 
     .card:hover .button:hover {
+        background: #fff;
         background: -moz-linear-gradient(top, #EEEEEE, #ffffff);
         background: linear-gradient(to center, #EEEEEE, #ffffff);
         opacity: 0.9;
     }
 
     .card:hover .button:active {
-        background: var(--primary-card-color);
+        background: var(--button-color);
         /*        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#DFDFDF));*/
         /*        background: -moz-linear-gradient(top, #fff, #DFDFDF);*/
         /*        background: linear-gradient(to bottom, var(--primary-card-color), var(--primary-card-color));*/
