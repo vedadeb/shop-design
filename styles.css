@@ -2,13 +2,11 @@
     --hover-card-color: #ff5e5e; //#e84d4d;
     --button-color: #fff;
     --button-shade-color: #20fc03;
-    --button-click-color: gray;
+    --button-click-color: #dbdbdb;
     --background-card-color: #fff;
     --text-primary-color: #111;
     --text-secondary-color: #fff;
 }
-
-
 
 @font-face {
     font-family: ghotic;
@@ -32,11 +30,11 @@ body {
     border-style: ridge;
     justify-content: center;
     text-align: center;
-/*    background: linear-gradient(to center, #EEEEEE, #ffffff);*/
+    /*    background: linear-gradient(to center, #EEEEEE, #ffffff);*/
     padding: 10px;
     padding-top: 0px;
     display: inline-block;
-    position: relative;    
+    position: relative;
     transition: background-color 0.3s;
     clip-path: polygon(0 0, calc(100% - 0px) 0, 100% 0px, 100% 100%, 0 100%);
 }
@@ -76,11 +74,11 @@ body {
     color: var(--hover-card-color);
     margin: 0;
     font-weight: 600;
-    
+
 }
 
 .button {
-    visibility: hidden;
+/*    visibility: hidden;*/
     position: absolute;
     opacity: 0;
     transition-delay: 0.4s;
@@ -107,39 +105,29 @@ body {
 
 .sale {
     position: absolute;
-            color: var(--hover-card-color);
-        border-radius: 74px;
-        opacity: 1;
-        top: 50%;
-        left: 10%;
-        font-weight: 800;
-        font-size: 14px;
-        padding: 3px;
-        font-style: italic;
+    color: var(--hover-card-color);
+    border-radius: 74px;
+    opacity: 1;
+    top: 50%;
+    left: 10%;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 3px;
+    font-style: italic;
 }
 
 .bubble {
-/*    visibility: hidden;*/
     position: absolute;
-/*
-    top: -11%;
-    left: 89%;
-*/
     height: 5.5em;
-	width: 5.5em;
+    width: 5.5em;
     background: #fff;
     transform-style: preserve-3d;
     z-index: 2;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-/*            visibility: visible;*/
-        left: 87%;
-        top: -9%;
-        opacity: 0.7;
-/*
-        transition: left 0.45s ease, top 0.45s ease, transform 0.3s;
-        transition-delay: transform 0.5s;
-*/
+    left: 87%;
+    top: -9%;
+    opacity: 0.7;
     transition-delay: transform 0.5s;
     transition: transform 0.3s;
 }
@@ -150,25 +138,19 @@ body {
     top: 80%;
     left: 80%;
     height: 20.5em;
-	width: 20.5em;
+    width: 20.5em;
     background: #fff;
     transform-style: preserve-3d;
     z-index: 2;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-/*
-    transition-delay: 0.45s;
-    transition: left 0.45s ease, top 0.45s ease;
-*/
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
 
-    .card:hover .bubble {
+    .card:hover .bubble {}
 
-    }
-    
     .card:hover .bubble_bottom {
         visibility: visible;
         left: 50%;
@@ -177,21 +159,19 @@ body {
         transition: left 0.45s ease, top 0.45s ease, opacity 0.45s;
         transition-delay: left 0.3s;
     }
-    
-    .card:hover .bubble:hover{
+
+    .card:hover .bubble:hover {
         transform: scale(1.1);
         transition: transform 0.5s;
     }
-    
-    /* Styles */
-    .card:hover .sale {
 
-    }
-    
-    .card:hover .picture{
+    /* Styles */
+    .card:hover .sale {}
+
+    .card:hover .picture {
         transform: scale(1.2);
         transition: transform 0.5s;
-         opacity: 0.85;
+        opacity: 0.85;
     }
 
     .card:hover .category {
@@ -208,7 +188,7 @@ body {
         background-size: 200% 100%;
         transition: background .45s, background-color .45s ease, clip-path .3s;
         border-color: transparent;
-        
+
     }
 
     .card:hover .title {
@@ -216,11 +196,12 @@ body {
     }
 
     .card:hover .price {
-        color:  var(--text-secondary-color);;
+        color: var(--text-secondary-color);
+        ;
     }
 
     .card:hover .button {
-/*        color: #2ac9a0;*/
+        /*        color: #2ac9a0;*/
         visibility: visible;
         transition: opacity 0.5s;
         -webkit-transition: opacity 0.5s;
@@ -228,7 +209,7 @@ body {
     }
 
     .card:hover .button:hover {
-/*        background: var(--button-shade-color);*/
+        /*        background: var(--button-shade-color);*/
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6);
         opacity: 0.9;
     }
@@ -242,14 +223,15 @@ body {
     .card:hover .button:focus {
         outline: none !important;
     }
-    
+
     .card:hover .bubble_bottom .share-button {
         transition: .45s cubic-bezier(0.25, 0, 0, 1), opacity 0.6s;
         transform: translate(+60%, -50%);
         left: 10%;
         top: 45%;
     }
-/*
+
+    /*
     
     .card:hover .bubble_bottom:hover {
         transition: opacity 0.3s;
@@ -258,8 +240,6 @@ body {
         
     }
 */
-
-
     .card:hover .share-button {
         display: inline-block;
         text-align: center;
@@ -267,7 +247,6 @@ body {
         padding: 7px 9px;
         border: 0px solid #364eb7;
         border-radius: 25px;
-/*        background: #, .3s cubic-bezier(0.3, 0, 0, 1);*/
         background: var(--button-color);
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
         font: normal normal normal 22px arial;
@@ -316,6 +295,13 @@ body {
 
 /* iPads (portrait) ----------- */
 @media only screen and (max-device-width : 1024px) {
+    
+    .bubble_bottom{
+        width: 100%;
+        height: 100%;
+        top: 0%;
+        left: 0%;
+    }
 
     /* Styles */
     .button {
@@ -323,10 +309,10 @@ body {
         position: absolute;
         opacity: 1;
         left: 60%;
-        top: 70%;
+        top: 75%;
         display: inline-block;
         padding: 12px 32px;
-        border: #415dda 1px solid;
+        border: var(--hover-card-color) 1px solid;
         border-radius: 74px;
         background: #fff;
         text-shadow: #ffffff 1px 1px 1px;
@@ -350,7 +336,7 @@ body {
         position: relative;
         top: 2px;
         left: -10px;
-        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABuUlEQVRIia2Uv0oDQRDGfzlCkHBFqpSC4EOIna2FBAvxAUQEU/kAtmJp4QNY+wBWVqlF22AhIocE60RD9M7iZnNzc7vnBVwYbm72m/l2vv3TAiKaj658Z00T2iYR4AtIxU/VArrAi/gbikRjvH4MfABTsXNFpruLFSYOYLy+JsjE7ylQLNZXBH0VDxGUgg48EpIzFXfknzKXiT+VOUeyBtwDJ+TSR45Qs+5KgUQSnCxZwLRcQ4mNgY6uqwnawIMAj02ndXvQk24yYN/WjYwdCPBZrcTJpQl0zoXkjIw8FYmQomNJOGzQwbrEfoBt01nZUeNICB4p7ooekfreCPaWwImyErkT8SaJA4pTZm0LWABzYDNQq9KB+78UggWFNNbmgrnyqFErURd4pXzmQ3ZHcTErQ+uriYbkm/cE7ADfgfyU/O0KLdQ70Sa/aPpMW9xKfh3BKmaP77KYJUqBU+CaGm09wz3fpQW3JJCqmPvviK0yZqrWsq5vcwbARGxQU7ARTt/KiOoeTPBfoAh4V7iE6jsU6dWnlKXCzFmMxUYhjE+iPVldwt8SJYL14vQmh56MUFeNcaHC/+L/AiTUmP6HDAW+AAAAAElFTkSuQmCC") no-repeat left center transparent;
+        background: url("data:image/png;base64,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") no-repeat left center transparent;
         background-size: 100% 100%;
     }
 }
