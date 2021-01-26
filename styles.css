@@ -140,6 +140,8 @@ body {
         transition: left 0.45s ease, top 0.45s ease, transform 0.3s;
         transition-delay: transform 0.5s;
 */
+    transition-delay: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 .bubble_bottom {
@@ -265,7 +267,7 @@ body {
         padding: 7px 9px;
         border: 0px solid #364eb7;
         border-radius: 25px;
-        background: #, .3s cubic-bezier(0.3, 0, 0, 1);
+/*        background: #, .3s cubic-bezier(0.3, 0, 0, 1);*/
         background: var(--button-color);
         box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
         font: normal normal normal 22px arial;
