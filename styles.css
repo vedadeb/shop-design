@@ -324,7 +324,15 @@ body {
 
     .card:hover {}
 
-    .card:hover .button {}
+    .card:hover .button {
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+
+
+    }
+    .card:hover .button:active {
+        background: var(--button-click-color);
+    }
 
     .button:before {
         content: "\0000a0";
