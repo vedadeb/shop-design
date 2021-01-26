@@ -30,7 +30,6 @@ body {
     border-style: ridge;
     justify-content: center;
     text-align: center;
-    /*    background: linear-gradient(to center, #EEEEEE, #ffffff);*/
     padding: 10px;
     padding-top: 0px;
     display: inline-block;
@@ -298,6 +297,15 @@ body {
 
 /* iPads (portrait) ----------- */
 @media only screen and (max-device-width : 1024px) {
+    
+    .category {
+        top: 10%;
+        left: 8%;
+        color: var(--hover-card-color);
+        opacity: 1;
+        font-weight: 600;
+        font-size: 13px;
+    }
     
     .bubble_bottom{
         width: 100%;
