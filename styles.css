@@ -262,6 +262,8 @@ body {
 
     .card:hover .share-button:active {
         background: var(--button-click-color);
+        opacity: 0.6;
+        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
     }
 
     .card:hover .share-button:before {
